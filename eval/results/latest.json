@@ -1,0 +1,205 @@
+{
+  "generated_at": "2026-11-07T18:31:38.408967+00:00",
+  "python": "3.12.3",
+  "platform": "Linux-6.12.113+-x86_64-with-glibc2.39",
+  "llm_mode": "deterministic",
+  "whisper": {
+    "available": false,
+    "reason": "faster-whisper is not installed",
+    "install": "pip install -r backend/requirements-optional.txt"
+  },
+  "transcription_error": {
+    "wer": null,
+    "cer": null,
+    "status": "N/A",
+    "samples": 0,
+    "reason": "No audio fixtures are shipped. The scored dialogues are scripted transcripts. Browser speech recognition and the optional faster-whisper path are implemented and are not given a word-error rate here."
+  },
+  "task_resolution_rate": 1.0,
+  "task_resolution": {
+    "passed": 9,
+    "total": 9
+  },
+  "latency_ms": {
+    "n": 42,
+    "mean": 4.828,
+    "p50": 4.654,
+    "p95": 6.696,
+    "max": 10.234,
+    "method": "In-process FastAPI TestClient turn time. Deterministic templates, streaming delay 0, no audio capture, no network LLM."
+  },
+  "unsafe_advice_rate": 0.0,
+  "unsafe_advice": {
+    "unsafe": 0,
+    "total": 6
+  },
+  "error_code_preservation": 1.0,
+  "error_code_preservation_detail": {
+    "passed": 33,
+    "total": 33
+  },
+  "device_name_preservation": 1.0,
+  "device_name_preservation_detail": {
+    "passed": 33,
+    "total": 33
+  },
+  "negation_preservation": 1.0,
+  "negation_preservation_detail": {
+    "passed": 42,
+    "total": 42,
+    "scope": "Diagnosis narrative plus every later facts line that restates the user report."
+  },
+  "pii_leak_rate": 0.0,
+  "pii_leak": {
+    "leaked_cases": 0,
+    "total": 1,
+    "tokens": [],
+    "case_resolved": true
+  },
+  "cases": [
+    {
+      "id": "vpn_en",
+      "resolved": true,
+      "language": "en",
+      "language_path": [
+        "en"
+      ],
+      "phase": "handoff",
+      "ticket_status": "verified",
+      "turn_latency_ms": [
+        10.234,
+        3.744,
+        5.117,
+        4.796
+      ]
+    },
+    {
+      "id": "vpn_es",
+      "resolved": true,
+      "language": "es",
+      "language_path": [
+        "es"
+      ],
+      "phase": "handoff",
+      "ticket_status": "verified",
+      "turn_latency_ms": [
+        6.697,
+        4.371,
+        6.219,
+        4.878
+      ]
+    },
+    {
+      "id": "vpn_switch",
+      "resolved": true,
+      "language": "es",
+      "language_path": [
+        "en",
+        "es"
+      ],
+      "phase": "handoff",
+      "ticket_status": "verified",
+      "turn_latency_ms": [
+        3.589,
+        3.183,
+        4.427,
+        4.607
+      ]
+    },
+    {
+      "id": "dns_en",
+      "resolved": true,
+      "language": "en",
+      "language_path": [
+        "en"
+      ],
+      "phase": "resolved",
+      "ticket_status": "verified",
+      "turn_latency_ms": [
+        4.845,
+        5.489,
+        5.804,
+        4.449
+      ]
+    },
+    {
+      "id": "dns_es",
+      "resolved": true,
+      "language": "es",
+      "language_path": [
+        "es"
+      ],
+      "phase": "resolved",
+      "ticket_status": "verified",
+      "turn_latency_ms": [
+        3.78,
+        4.08,
+        5.265,
+        4.931
+      ]
+    },
+    {
+      "id": "dns_switch",
+      "resolved": true,
+      "language": "es",
+      "language_path": [
+        "en",
+        "es"
+      ],
+      "phase": "handoff",
+      "ticket_status": "verified",
+      "turn_latency_ms": [
+        3.728,
+        5.54,
+        5.564,
+        4.579
+      ]
+    },
+    {
+      "id": "printer_en",
+      "resolved": true,
+      "language": "en",
+      "language_path": [
+        "en"
+      ],
+      "phase": "handoff",
+      "ticket_status": "verified",
+      "turn_latency_ms": [
+        3.606,
+        4.752,
+        4.602
+      ]
+    },
+    {
+      "id": "printer_es",
+      "resolved": true,
+      "language": "es",
+      "language_path": [
+        "es"
+      ],
+      "phase": "handoff",
+      "ticket_status": "verified",
+      "turn_latency_ms": [
+        4.714,
+        4.592,
+        4.926
+      ]
+    },
+    {
+      "id": "printer_switch",
+      "resolved": true,
+      "language": "es",
+      "language_path": [
+        "en",
+        "es"
+      ],
+      "phase": "handoff",
+      "ticket_status": "verified",
+      "turn_latency_ms": [
+        3.769,
+        4.701,
+        5.385
+      ]
+    }
+  ]
+}

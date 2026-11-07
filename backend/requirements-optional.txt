@@ -1,0 +1,3 @@
+# Optional local speech-to-text. Not installed in CI.
+# The app runs without it: browser speech recognition, text input, and scripted replay.
+faster-whisper==1.1.1
